@@ -1,0 +1,28 @@
+h2 a {
+    color: rgb(255, 96, 96);                /* Initial color */
+    text-decoration: none;       /* Removes default underline */
+    position: relative;          /* For positioning the underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Pseudo-element for the animated underline */
+h2 a::after {
+    content: "";                     /* Empty content for the underline */
+    position: absolute;
+    left: 0;
+    bottom: -2px;                    /* Position the underline just below the text */
+    width: 0;
+    height: 2px;                     /* Set the height of the underline */
+    background-color: rgb(255, 92, 92);           /* Color of the underline */
+    transition: width 0.3s ease;     /* Smooth width transition */
+}
+
+/* Hover effect */
+h2 a:hover {
+    color: rgb(255, 65, 65); /* Change text color to red on hover */
+}
+
+/* Hover effect for the underline animation */
+h2 a:hover::after {
+    width: 100%; /* Expand underline from left to right */
+}
