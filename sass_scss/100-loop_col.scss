@@ -1,0 +1,8 @@
+// 100-loop_col.scss
+
+// Loop through values 1 to 4 to create .col-1 to .col-4 with corresponding widths
+@for $i from 1 through 4 {
+  .col-#{$i} {
+    width: (100 / $i) * 1%;
+  }
+}

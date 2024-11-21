@@ -1,0 +1,8 @@
+// 12-loop_header.scss
+
+// Loop from 1 to 5 to generate H1 to H5 with corresponding font sizes
+@for $i from 1 through 5 {
+  h#{$i} {
+    font-size: #{$i}px;
+  }
+}

@@ -1,0 +1,13 @@
+// 101-media_query.scss
+
+// Default font size for h1
+h1 {
+  font-size: 20px;
+}
+
+// Media query for screens smaller than 320px
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 14px;
+  }
+}

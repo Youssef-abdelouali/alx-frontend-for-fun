@@ -1,0 +1,8 @@
+body {
+  color: #3D3D3D;
+
+  // Target .red elements that are the first child of body
+  > .red {
+    color: #FF0000;
+  }
+}
